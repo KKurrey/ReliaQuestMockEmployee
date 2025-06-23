@@ -1,2 +1,17 @@
 spring.application.name: employee-api
 server.port: 8111
+spring:
+  data:
+    redis:
+      host: localhost
+      port: 6379
+resilience4j.retry:
+  instances:
+    employee-api-retry:
+      max-attempts: 3
+      wait-duration: 1s
+      retry-exceptions:
+        - com.reliaquest.api.exception.TooManyRequestsException
+employee:
+  api:
+    base-url: http://localhost:8112/api/v1/employee
