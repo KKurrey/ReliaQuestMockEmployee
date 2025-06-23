@@ -117,7 +117,7 @@ Start Redis server
 Start **Server** Spring Boot application.
 `./gradlew server:bootRun`
 
-#### Start the Employee Management API
+### Start the Employee Management API
 Start **Api** Spring Boot application.
 `./gradlew api:bootRun`
 
