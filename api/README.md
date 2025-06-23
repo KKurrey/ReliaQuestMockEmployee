@@ -111,11 +111,16 @@ Start Redis server
 `brew services start redis`
 
 
+## Running the Application
+
+### Start the Mock Employee API Server
 Start **Server** Spring Boot application.
 `./gradlew server:bootRun`
 
+#### Start the Employee Management API
 Start **Api** Spring Boot application.
 `./gradlew api:bootRun`
 
+### Testing the Application
 Run **Tests** in the **Api** Spring Boot application.
 `./gradlew test`
