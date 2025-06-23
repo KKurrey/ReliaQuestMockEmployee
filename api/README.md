@@ -102,12 +102,12 @@ This is a Spring Boot-based microservice that manages employee data. It integrat
 
 ---
 
-### Install Redis on macOS using brew
+## Install Redis on macOS using brew
 
-# Install Redis
+Install Redis
 `brew install redis`
 
-# Start Redis server
+Start Redis server
 `brew services start redis`
 
 
